@@ -7,7 +7,7 @@ pipeline {
                 /* `make check` returns non-zero on test failures,
                 * using `true` to allow the Pipeline to continue nonetheless
                 */
-                bat 'pytest .\ tests_data_sets.py ' 
+                bat 'pytest --junit-xml=results.xml .\ttests_data_sets.py ' 
             }
         }
     }
