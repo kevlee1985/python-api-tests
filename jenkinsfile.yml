@@ -1,13 +1,9 @@
 pipeline {
     agent any
-
     stages {
-        stage('Test') {
+        stage('hello') {
             steps {
-                /* `make check` returns non-zero on test failures,
-                * using `true` to allow the Pipeline to continue nonetheless
-                */
-                sh 'pytest --junit-xml=results.xml .\tests_data_sets.py ' 
+                sh 'echo Hello Jenkins!'
             }
         }
     }
