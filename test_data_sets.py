@@ -4,7 +4,7 @@ import pytest
 
 data_set = [
     (1, 'Leanne Graham', 'Gwenborough'),
-    (2, 'Ervin Howell', 'Wiso5burgh'),
+    (2, 'Ervin Howell', 'Wisokyburgh'),
     ]
 
 
