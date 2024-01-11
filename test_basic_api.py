@@ -18,4 +18,4 @@ def test_status_code2():
 def test_assert_body_element():
     response = requests.get('https://jsonplaceholder.typicode.com/users/7')
     body = response.json()
-    assert body['name'] == 'Kurtis Weissssnat'
+    assert body['name'] == 'Kurtis Weissnat'
