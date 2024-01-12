@@ -5,6 +5,8 @@ import pytest
 data_set = [
     (1, 'Leanne Graham', 'Gwenborough'),
     (2, 'Ervin Howell', 'Wisokyburgh'),
+    (3, 'Clementine Bauch', 'McKenziehaven'),
+    (4, 'Patricia Lebsack', 'South Elvis')
     ]
 
 
