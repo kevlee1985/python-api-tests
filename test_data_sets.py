@@ -10,7 +10,7 @@ data_set = [
     ]
 
 
-@pytest.mark.parametrize('id, name, address_city, latitude,' data_set)
+@pytest.mark.parametrize('id, name, address_city, latitude', data_set)
 def test_for_names(id, name, address_city, latitude):
     response = requests.get(f'https://jsonplaceholder.typicode.com/users/{id}')
     body = response.json()
