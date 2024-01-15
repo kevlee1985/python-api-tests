@@ -15,5 +15,5 @@ def test_for_names(id, name, address_city, latitude):
     response = requests.get(f'https://jsonplaceholder.typicode.com/users/{id}')
     body = response.json()
     assert body['name'] == name
-    assert body ['address']['city'] == address_city
+    assert body['address']['city'] == address_city
     assert body['address']['geo']['lat'] == latitude
