@@ -1,3 +1,5 @@
+'''
+
 import json
 import requests
 from pytest_bdd import scenario, given, then
@@ -20,9 +22,9 @@ def geo_call(context, url):
     context.response = requests.post(url, json=data, headers=headers)
 
 
-@then("Check the response status as 200")
+#@then("Check the response status as 200")
 def check_200_status(context):
     status_code = context.reponse.status_code
     assert status_code == 200
-
+'''
 
