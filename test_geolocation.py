@@ -29,7 +29,7 @@ def test_tc02():
     response = requests.post(url, json=data, headers=headers)
     json_data = response.json()
     assert json_data["locationOk"] == False
-    assert response.status_code == 200
+    assert response.status_code == 201
 
 
 # TC03 - Incorrectly formatted JSON request
