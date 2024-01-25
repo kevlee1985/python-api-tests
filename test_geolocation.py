@@ -12,11 +12,11 @@ def post_call(file_name: str):
     return response
 
 
-# TC00 - invalid get request to URL
+# TC00 - invalid GET request to URL
 def test_tc00():
-    response = requests.post(url)
+    response = requests.get(url)
     print(f'Status code is: {response.status_code}')
-    assert response.status_code == 400
+    assert response.status_code == 405
 
 
 # TC01 - UK Based IP/Coordinates request
