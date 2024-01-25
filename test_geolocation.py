@@ -2,7 +2,7 @@ import json
 import requests
 import variables
 
-url = variables.base_url
+url = variables.geo_base_url
 
 
 def post_call(file_name: str):
